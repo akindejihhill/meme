@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- HTML2Canvas Library -->
+    <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
+</head>
+<body>
+
+<header>
+    <h1>Free 30 second Meme Generator</h1>
+    <strong>(Make a meme in 30 seconds or your money back, GUARANTEED!)</strong>
+</header>
+
+<section class="container">
+
+    <div id="panel"> 
+        <form id="memeform">
+            <div class="field">
+                <label for="address">Type image URL or </label>
+                <input type="button" id="dog_button" value="Get random dog image">
+                <textarea id="address" class ="textinput"></textarea>
+            </div>
+            <div id="options">
+                <span>
+                    <input id="rounded" type="checkbox">
+                    <label for="rounded">rounded corners</label>
+                </span><br>
+                <span>
+                    <input checked = "checked" name = "outline" id="nooutline" type="radio">
+                    <label for="nooutline">no text outline</label>
+                    <input name = "outline" id="blackoutline" type="radio">
+                    <label for="blackoutline">black outline</label>
+                    <input name = "outline" id="whiteoutline" type="radio">
+                    <label for="whiteoutline">white outline</label>
+                </span>
+            </div>
+
+            <div class="field">
+                <label for="toptext">Top Text</label>
+                <textarea id="toptext" class = "textinput"></textarea>
+                <span>
+                    <label for="topcolor">Text Color</label>
+                    <input id="topcolor" type="color">
+                </span>
+                <span>
+                    <input id="toptoggle" type="checkbox">
+                    <label for="topbackground">Background</label>
+                    <input id="topbg" type="color">
+                </span>
+            </div>
+
+            <div class="field">
+                <label for="bottomtext">Bottom Text</label>
+                <textarea id="bottomtext" class="textinput"></textarea>
+                <span>
+                    <label for="bottomcolor">Text Color</label>
+                    <input id="bottomcolor" type="color">
+                </span>
+                <span>
+                    <input id="bottomtoggle" type="checkbox">
+                    <label for="bottombackground">Background</label>
+                    <input id="bottombg" type="color">
+                </span>
+            </div>
+            <div id="generate">Generate!</div>
+        </form>
+        <p>Try adding an <a target = "_blank" href="https://www.w3schools.com/charsets/ref_emoji.asp">emoji! &#128049;</a></p>
+        <div id = "canvascontainer"></div>
+    </div>
+
+    <div id="output"></div>
+
+
+
+</section>
+
+</body>
+</html>
