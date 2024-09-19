@@ -1,0 +1,18 @@
+{
+  "name": "awesome-meme-generator",
+  "version": "1.0.0",
+  "description": "It makes static memes in no time at all",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine-browser-runner runSpecs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-browser-runner": "^2.3.0",
+    "jasmine-core": "^5.1.1"
+  }
+}

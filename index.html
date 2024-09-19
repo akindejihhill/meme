@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <!-- HTML2Canvas Library -->
     <script src='https://html2canvas.hertzen.com/dist/html2canvas.min.js'></script>
 </head>
 <body>
+
 
 <header>
     <h1>Free 30 second Meme Generator</h1>
@@ -23,7 +23,7 @@
         <form id="memeform">
             <div class="field">
                 <label for="address">Type image URL or </label>
-                <input type="button" id="dog_button" value="Get random dog image">
+                <button type="button" id="dogbutton">Get random dog image</button>
                 <textarea id="address" class ="textinput"></textarea>
             </div>
             <div id="options">
@@ -50,7 +50,7 @@
                 </span>
                 <span>
                     <input id="toptoggle" type="checkbox">
-                    <label for="topbackground">Background</label>
+                    <label for="topbg">Background</label>
                     <input id="topbg" type="color">
                 </span>
             </div>
@@ -64,7 +64,7 @@
                 </span>
                 <span>
                     <input id="bottomtoggle" type="checkbox">
-                    <label for="bottombackground">Background</label>
+                    <label for="bottombg">Background</label>
                     <input id="bottombg" type="color">
                 </span>
             </div>
@@ -79,6 +79,7 @@
 
 
 </section>
+<script src="scripts/script.js"></script>
 
 </body>
 </html>

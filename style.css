@@ -1,17 +1,28 @@
 @media only screen and (max-width: 800px) {
 
     .container{
-        width: 440px;
+        width: 100%;
         font-size: 1.1vw;
-        flex-direction: column;
     }
 
     #panel, #output{
       display: block;
-      width: 440px;
+      width: 100%;
     }
 
 }
+
+
+@media only screen and (min-width: 800px) {
+  #panel{
+    width: 800px;
+  }
+
+  #output{
+    width: 800px;
+  }
+}
+
 
 
 @media only screen and (max-width: 1199px) {
@@ -44,7 +55,6 @@ body{
 }
 
 #panel, #output{
-    height: 98vh ;
     background-color:white;
     border: 2px solid black;
     border-radius: 20px;
@@ -58,14 +68,8 @@ body{
   font-size: 16px;
 }
 
-@media only screen and (min-width: 800px) {
-  #panel{
-    width: 350px;
-  }
-
-  #output{
-    width: 595px;
-  }
+form{
+  display : inline-block;
 }
 
 header{
@@ -83,7 +87,7 @@ strong {
 }
 
 #canvascontainer , canvas{
-    display: block;
+    display: inline-block;
     margin: 0 auto;
   }
 
@@ -93,7 +97,7 @@ strong {
     margin: 0.5em 0.5em;
 }
 
-input{
+input, button{
   border-radius: 13px;
 }
 
